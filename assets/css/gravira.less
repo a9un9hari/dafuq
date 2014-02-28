@@ -1,0 +1,60 @@
+@import "mixin.less";
+
+.netra{
+	width: 960px;
+}
+.heading{
+	height: 600px;
+	background-color: #002b35;
+	//.gradient(left,#f43f20,#e47911);
+	background-size: cover;
+	
+
+	.netra-landing{
+		text-align: left;
+		margin-top: 100px;
+		.left-side{
+			width: 50%;
+			float: left;
+			.headline_tagline {
+				max-width: 90%;
+				font-size: 20px;
+				line-height: 35px;
+				color: #fff;
+				font-weight: 300;
+
+			}
+			h1{
+				font-size: 48px;
+				color: #fff;
+			}
+
+			.btn-outline-inverse{
+				text-align: center;
+				margin: 0 auto;
+				color: #fff;
+				background-color: transparent;
+				border-color: #fff;
+				margin-right:20px;
+			}
+			.btn-outline-inverse:hover{
+				background: #fff;
+				color: #002b35;
+			}
+		}
+		.right-side{
+			width: 50%;
+			float: right;
+			.mascott{
+				background: url(http://zurb.com/ink/images/inky-all-devices.svg) no-repeat center center;
+				background-size: cover;
+				width: 500px;
+				height: 580px;
+				position: relative;
+				top: -150px !important;
+
+			}
+		}
+		
+	}
+}
