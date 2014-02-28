@@ -2,7 +2,7 @@
 
 // Copy and paste the results from `passgen` here
 $salt = '';
-$pass = '';
+$pass = 'merdeka123';
 // End copy and paste
 
 
