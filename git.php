@@ -32,22 +32,29 @@ if (isset($_GET['update'])) {
 	$check = md5(crypt($_GET['update'], $salt));
 
 	if ($pass === $check) {
-
+		$output = "<script>console.log( 'git update success' );</script>";
+		echo $output;
 		// what does the pull
 		$output = shell_exec('git pull');
 
 		if ( $output && $email ) {
 			// Email to say it's successful
 			mail($email, '['.$projectName.'] `git pull`', $output."\r\n".$msg, $headers);
+			$output = "<script>console.log( 'git update success: " . $msg . "' );</script>";
+			echo $output;
 		} elseif ( $email ) {
 			// We didn't get output so an error occured
 			mail($email, '['.$projectName.'] `git pull` error', 'No output'."\r\n".$msg, $headers);
+			$output = "<script>console.log( 'git update fail: " . $msg . "' );</script>";
+			echo $output;
 		}
 
 	} elseif ( $email ) {
 
 		// Email to say the pull failed (due to wrong pass)
 		mail($email, '['.$projectName.'] `git pull` password fail', $output."\r\n".$msg, $headers); 
+		$output = "<script>console.log( 'git update password fail: " . $msg . "' );</script>";
+		echo $output;
 
 	}
 
