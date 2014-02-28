@@ -1,7 +1,7 @@
 <?php 
 
-$salt = '585806269';
-$pass = 'be8afa687f1fd6145788ac480ec2c0fd';
+$salt = '2120233347';
+$pass = 'd3fea37422882613df27e048857c2ce6';
 // End copy and paste
 
 
