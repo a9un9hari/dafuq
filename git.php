@@ -20,8 +20,8 @@ if ( isset($_GET['from']) && $_GET['from'] )       $from = $_GET['from'];
 
 
 // Don't need to edit these lines
-$remoteIP = $_SERVER['REMOTE_ADDR'];
-$msg	  = 'Request came form '.$remoteIP.' - http://whois.arin.net/rest/ip/'.$remoteIP;
+//$remoteIP = $_SERVER['REMOTE_ADDR'];
+$msg	  = 'Request came form';
 $headers  = 'From: '.$from.' <'.$from.'@github.com>';
 
 
