@@ -1,7 +1,7 @@
 <?php 
 
-$salt = '';
-$pass = 'merdeka123';
+$salt = '585806269';
+$pass = 'be8afa687f1fd6145788ac480ec2c0fd';
 // End copy and paste
 
 
@@ -78,3 +78,4 @@ if (isset($_GET['update'])) {
 } elseif ( $email ) {
 	mail($email, '['.$projectName.'] `git pull` failed', $msg, $headers);
 }
+?>
