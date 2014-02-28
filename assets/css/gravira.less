@@ -1,15 +1,17 @@
 @import "mixin.less";
-
+html,body{
+	font-family: @base-font;
+}
 .netra{
 	width: 960px;
 }
 .heading{
 	height: 600px;
-	background-color: #002b35;
+	background-color: @base-color-green;
 	//.gradient(left,#f43f20,#e47911);
 	background-size: cover;
+	margin-bottom: 100px;
 	
-
 	.netra-landing{
 		text-align: left;
 		margin-top: 100px;
@@ -19,6 +21,7 @@
 			.headline_tagline {
 				max-width: 90%;
 				font-size: 20px;
+				font-family: @base-font2;
 				line-height: 35px;
 				color: #fff;
 				font-weight: 300;
@@ -27,6 +30,8 @@
 			h1{
 				font-size: 48px;
 				color: #fff;
+				font-weight: 800;
+				text-transform: uppercase;
 			}
 
 			.btn-outline-inverse{
@@ -57,4 +62,25 @@
 		}
 		
 	}
+}
+.oddro-services{
+	text-align: center;
+	background-color: @base-color-grey;
+	border-radius: 3px;
+	padding: 0 22px;
+	border-bottom: 6px solid #e0e0e0;
+	padding-bottom: 36px;
+	margin-bottom: 110px;
+	h3{
+		font-family: @base-font2;
+		font-size: 30px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	img{
+		margin-top: -78px;
+		-webkit-transition: all 700ms;
+		transition: all 700ms;
+	}
+
 }
