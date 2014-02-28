@@ -6,6 +6,26 @@ html,body{
 .netra{
 	width: 960px;
 }
+.common{
+	.divider {
+		max-width: 300px;
+		background-color: #f5f7f6;
+		height: 4px;
+		margin: 0 auto;
+		margin-top: -58px;
+		margin-bottom: 100px;
+		position: relative;
+	}
+	.divider:before {
+		content: '';
+		position: absolute;
+		background-color: #40b876;
+		width: 84px;
+		height: 4px;
+		left: 50%;
+		margin-left: -42px;
+	}
+}
 .heading{
 	height: 600px;
 	background-color: @base-color-green;
