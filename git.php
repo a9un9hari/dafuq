@@ -7,7 +7,7 @@ $pass = 'd3fea37422882613df27e048857c2ce6';
 
 // Defaults
 $projectName = 'dafuq'; // Your project name
-$email		 = 'prasetyo.mailbox@gmail.com'; // Email address you want pull notifcations to go to
+$email		 = 'arie@wego.com'; // Email address you want pull notifcations to go to
 $from        = 'no-reply'; // Who the email, when called, is sent "from"
 
 
