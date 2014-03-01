@@ -3,6 +3,22 @@ html,body{
 	font-family: @base-font;
 	color: @base-text-color;
 }
+@media (min-width: 768px)
+{
+	.netra{
+		width: 750px;
+	}
+
+}
+.navbar{
+
+}
+.navbar-inverse {
+	font-size: 12px;
+	font-weight: 400;
+	background-color: #1a1a1c;
+	border: none;
+}
 .netra{
 	width: 960px;
 }
@@ -26,11 +42,11 @@ html,body{
 		text-transform: lowercase;
 	}
 	.title{
-		margin-top: -80px;
+		margin-top: -140px;
 		margin-bottom: 90px;
 		text-align: center;
 		font-size: 36px;
-		padding-top: 30px;
+		padding-top: 90px;
 		font-family: @base-font2;
 		text-transform: uppercase;
 		font-weight: 600;
@@ -47,7 +63,11 @@ html,body{
 }
 .heading{
 	height: 600px;
+	background-image: url(https://d25ss6wjc6pfq2.cloudfront.net/assets/shared/light-gray-topo-hi-4e6a536475f8422cda9330175b32d3f3.png);
+	background-size: 450px 450px;
+	//background-color: #262626;
 	background-color: #1a1a1c;
+
 	//.gradient(left,#f43f20,#e47911);
 	background-size: cover;
 	margin-bottom: 100px;
@@ -106,7 +126,8 @@ html,body{
 .features{
 	background-color: @base-color-grey;
 	text-align: center;
-	padding-bottom: 30px;
+	padding-bottom: 100px;
+	margin-top: -30px;
 	h2{
 		text-align: center;
 		font-size: 36px;
@@ -151,4 +172,11 @@ html,body{
 }
 .oddro-services:hover{
 	border-color: @base-color-green;
+}
+.custom-shape{
+	border-color:#000;
+}
+footer{
+	height: 117px;
+	background: url('../images/footer_bg.jpg') center bottom repeat-x;
 }
