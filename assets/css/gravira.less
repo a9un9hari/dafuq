@@ -30,6 +30,7 @@ html,body{
 		//border-bottom: 1px solid rgba(255,255,255,.3);
 	}
 }
+
 .navbar-brand{
 	background: url(../images/logo.png) no-repeat left center;
 	background-size: 168px 43px;
@@ -39,7 +40,7 @@ html,body{
 	margin-bottom: 0;
 	//border-bottom: 1px solid rgba(255,255,255,.3);
 	text-transform: uppercase;
-	font-family: Montserrat,Helvetica,Arial,sans-serif;
+	font-family:@base-font2;
 	background-color: #000;
 }
 
@@ -60,14 +61,16 @@ html,body{
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
 }
-
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li.active {
-	outline: 0;
-	background-color: rgba(255,255,255,.2);
+.navbar-custom .nav li a:hover{
+	color: #fff;
+	background: transparent;
+	border-bottom:2px solid  @base-color-green;
 }
-
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+	color: #fff;
+	background: transparent;
+	border-bottom:2px solid  @base-color-green;
+}
 .navbar-toggle {
 	padding: 4px 6px;
 	font-size: 16px;
@@ -88,7 +91,11 @@ html,body{
 .netra{
 	width: 960px;
 }
+
 .common{
+	.sprites{
+		background: url('../images/social.png') no-repeat;
+	}
 	.divider {
 		max-width: 300px;
 		background-color: #f5f7f6;
@@ -242,7 +249,7 @@ html,body{
 footer{
 	.feedback{
 		height: 100px;
-		background: #000;
+		background: #393e47;
 		margin-top: -100px;
 		margin-bottom: 40px;
 		float: left;
