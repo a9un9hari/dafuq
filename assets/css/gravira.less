@@ -10,24 +10,92 @@ html,body{
 	}
 
 }
+@media(min-width:767px) {
+	.navbar {
+		padding: 20px 0;
+		border-bottom: 0;
+		letter-spacing: 1px;
+		background: 0 0;
+		-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+		-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+		transition: background .5s ease-in-out,padding .5s ease-in-out;
+	}
+
+	.top-nav-collapse {
+		padding: 0;
+		background-color: #000;
+	}
+
+	.navbar-custom.top-nav-collapse {
+		//border-bottom: 1px solid rgba(255,255,255,.3);
+	}
+}
+
 .navbar-brand{
 	background: url(../images/logo.png) no-repeat left center;
 	background-size: 168px 43px;
 	width: 166px;
 }
-.navbar{
-
+.navbar {
+	margin-bottom: 0;
+	//border-bottom: 1px solid rgba(255,255,255,.3);
+	text-transform: uppercase;
+	font-family:@base-font2;
+	background-color: #000;
 }
+
+.navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-brand:focus {
+	outline: 0;
+}
+
+.navbar-custom a {
+	color: #fff;
+}
+
+.navbar-custom .nav li a {
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+}
+.navbar-custom .nav li a:hover{
+	color: #fff;
+	background: transparent;
+	border-bottom:2px solid  @base-color-green;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+	color: #fff;
+	background: transparent;
+	border-bottom:2px solid  @base-color-green;
+}
+.navbar-toggle {
+	padding: 4px 6px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+	outline: 0;
+}
+
 .navbar-inverse {
 	font-size: 12px;
 	font-weight: 400;
-	background-color: #1a1a1c;
+	background-color: transparent;
 	border: none;
 }
 .netra{
 	width: 960px;
 }
+
 .common{
+	.sprites{
+		background: url('../images/social.png') no-repeat;
+	}
 	.divider {
 		max-width: 300px;
 		background-color: #f5f7f6;
@@ -158,7 +226,7 @@ html,body{
 	margin-bottom: 110px;
 	h3{
 		font-family: @base-font2;
-		font-size: 30px;
+		font-size: 28px;
 		font-weight: 600;
 		text-transform: uppercase;
 	}
@@ -179,6 +247,32 @@ html,body{
 	border-color:#000;
 }
 footer{
+	.feedback{
+		height: 100px;
+		background: #393e47;
+		margin-top: -100px;
+		margin-bottom: 40px;
+		float: left;
+		.border-radius(5px);
+	}
+	.copyright{
+		text-align: right;
+	}
 	height: 117px;
+	padding-top: 40px;
+	font-size: 11px;
+	color: #fff;
 	background: url('../images/footer_bg.jpg') center bottom repeat-x;
+	ul{
+		color: #fff;
+		li{
+			color: #fff;
+			list-style: none;
+			margin: 0px 5px;
+			display: inline-block;
+		}
+		li a{
+			color:#fff;
+		}
+	}
 }
